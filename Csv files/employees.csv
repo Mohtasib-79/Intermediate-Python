@@ -1,0 +1,9 @@
+employee_id,name,department,salary,city,experience
+E101,Amit,Sales,42000,Delhi,3
+E102,Neha,IT,65000,Noida,5
+E103,Rahul,HR,38000,Delhi,2
+E104,Priya,IT,72000,Gurgaon,6
+E105,Karan,Sales,48000,Noida,4
+E106,Simran,Finance,55000,Delhi,5
+E107,Rohit,IT,60000,Gurgaon,3
+E108,Anjali,Finance,50000,Noida,2
