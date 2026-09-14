@@ -11,14 +11,17 @@
 #
 # Delivery was bad
 # Bad packaging
+# ........................................................
+# with open("negative_reviews.txt", "r") as f:
+#     lines = f.readlines()
 
+# with open("review_analysis.txt", "w") as g:
+#     for line in lines:
+#         if "bad" in line.lower():
+#             g.write(line)
+# ..........................................................
 
-
-
-
-
-
-
+ 
 # server_log.txt:
 #
 # INFO Server started
@@ -29,10 +32,17 @@
 #
 # Write only lines beginning with ERROR into errors.txt.
 
+# ...................................................................
+# with open("server_log.txt","r") as f:
+#     lines = f.readlines()
+#     # print(lines)
 
+# with open("error_log.txt", "w") as g:
+#     for line in lines:
+#         if line.strip().startswith("ERROR"):
+#             g.write(line)
 
-
-
+# ......................................................................
 
 
 
@@ -50,3 +60,16 @@
 #
 # Riya,32
 # Neha,29
+with open("marks.txt","r") as f:
+    lines = f.readlines()
+    # print(lines)
+with open("failed_students.txt", "w") as g:
+    for line in lines:
+        student_marks = line.strip().split(",")
+        mark = float(student_marks[1])
+        # print(mark)
+        if mark < 40:
+            g.write(line)
+
+
+
